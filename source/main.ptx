@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Copyright 2022 Anthony Bradburn -->
+<!-- This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License-->
+<!-- https://creativecommons.org/licenses/by-nc-sa/4.0 -->
+
+<!-- To process this file with xsltproc do                                                        -->
+<!--                                                                                              -->
+<!-- (1) LaTeX/PDF:                                                                               -->
+<!--     xsltproc -o armv8_assembly.tex [PreText Path]/xsl/pretext-latex.xsl source/main.ptx      -->
+<!--     pdflatex armv8_assembly.tex                                                              -->
+<!--     xelatex armv8_assembly.tex                                                               -->
+<!--                                                                                              -->
+<!-- (2) HTML:                                                                                    -->
+<!--     xsltproc [PreText Path]/xsl/pretext-html.xsl source/main.ptx                             -->
+<!--     <browser>  armv8_assembly.html                                                           -->
+<!--                                                                                              -->
+
+<!--    Currently using: https://github.com/arechnitzer/CLP4/blob/master/pretext/clp_4_vc.ptx as a reference.    -->
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="misc/book_info.ptx" />
+
+    <book xml:id="armv8_assembly">
+        <title>ARMv8 Assembly</title>
+
+        <xi:include href="misc/frontmatter.ptx" />
+
+        
+        <xi:include href="source/introduction.ptx" />
+        <xi:include href="source/setup.ptx" />
+        <backmatter>
+            <title>Appendices</title>
+            <xi:include href="source/appendix01.ptx" />
+
+        </backmatter>
+    </book>
+</pretext>
